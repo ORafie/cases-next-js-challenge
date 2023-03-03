@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import WaveDivider from "@/components/WaveDivider";
+import { Card } from '@/components/Card';
+import { cards } from 'data/cards';
 
 export default function Home() {
     return (
@@ -21,7 +23,8 @@ export default function Home() {
                     <Hero title="Read cases from our users and experts" description="some description goes here"/>
                     <WaveDivider topColor="grey" bottomColor="grey"/>
 
-                    todo: Your component(s) for building the cases page go here!
+                    { cards.map(card => <Card card={card} key={card.id} />) } 
+                    
                 
                 </Box>
                 <Footer/>
