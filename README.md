@@ -33,6 +33,7 @@ The following things are out-of-scope as they are already developed:
 - Pagination
 - Anything below the pagination: swirl, footer, footer links etc.
 
+
 ## Technical constraints
 
 Due to our current tech-stack, we are hoping you could deliver the solution using:
